@@ -1,0 +1,42 @@
+.container {
+  display: flex;
+  flex-flow: column; }
+
+.base {
+  background-color: #013ADF;
+  height: 100px;
+  border: 1px solid gray;
+  width: 15%;
+  text-align: center; }
+
+.important {
+  background-color: #012079;
+  height: 100px;
+  border: 1px solid gray;
+  width: 15%;
+  text-align: center; }
+
+.warning {
+  background-color: #adc2ff;
+  height: 100px;
+  border: 1px solid gray;
+  width: 15%;
+  text-align: center; }
+
+.pfont {
+  font-family: Monospace;
+  width: 15%;
+  text-align: center; }
+
+.sfont {
+  font-family: serif;
+  width: 15%;
+  text-align: center; }
+
+.bshadow {
+  box-shadow: -11px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  height: 100px;
+  border: 1px solid gray;
+  width: 15%;
+  text-align: center;
+  border-radius: 10px; }

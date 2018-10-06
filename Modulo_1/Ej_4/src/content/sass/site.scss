@@ -1,0 +1,72 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline; }
+
+
+.container{
+    display: grid;
+
+    max-width: 900px;
+    margin: auto;
+    height: 100vh;
+
+    @media screen and (min-width: 867px) {
+        grid-template-rows: 50% 50%;
+        grid-template-columns: 30% 70%;
+        grid-template-areas: 
+        'bar contentA' 
+        'bar contentB';
+      }
+
+    @media screen and (max-width: 866px) {
+        grid-template-rows: 10% 45% 45%;
+        grid-template-areas: 
+        'bar' 
+        'contentA' 
+        'contentB';
+      }
+}
+
+.bar{
+    grid-area: bar;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #F6CEE3;
+
+    @media screen and (max-width: 866px) {
+        flex-direction: row;
+        align-items: center;
+      }
+
+    @media screen and (max-width: 476px) {
+        flex-direction: row;
+        justify-content: start;
+      }
+
+    .csstricks{
+
+    }
+
+    .w3c{
+
+    }
+
+    .jss{
+
+    }
+}
+
+.contentA{
+    grid-area: contentA;
+    background-color: #F4FA58;
+}
+
+.contentB{
+    grid-area: contentB;
+    background-color: #2E2EFE;
+}

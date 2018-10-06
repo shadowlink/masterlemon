@@ -1,0 +1,51 @@
+@import 'themeB';
+
+
+.container{
+    display:flex;
+    flex-flow: column;
+}
+
+.base{
+    background-color: $color1;
+    height: 100px;
+    border:1px solid gray;
+    width: 15%;
+    text-align: center;
+}
+.important{
+    background-color: darken($color1, 20%);
+    height: 100px;
+    border:1px solid gray;
+    width: 15%;
+    text-align: center;
+}
+
+.warning{
+    background-color: lighten($color1, 40%);
+    height: 100px;
+    border:1px solid gray;
+    width: 15%;
+    text-align: center;
+}
+
+.pfont{
+    font-family: $principal_font;
+    width: 15%;
+    text-align: center;
+}
+
+.sfont{
+    font-family: $secondary_font;
+    width: 15%;
+    text-align: center;
+}
+
+.bshadow{
+    box-shadow: $shadow;
+    height: 100px;
+    border:1px solid gray;
+    width: 15%;
+    text-align: center;
+    border-radius: $border_radius;
+}
