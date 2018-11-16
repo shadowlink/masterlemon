@@ -100,23 +100,23 @@ console.log(isBookRead(books, "Devastación"))
 
 //Ejercicio 8 (Opcional TS)
 
-// interface Book{
-//     title: string,
-//     isRead: boolean,
-// }
+ interface Book{
+     title: string,
+     isRead: boolean,
+ }
 
-// const books: Book[] = [
-//     {title:"Harry Potter y la piedra filosofal", isRead:true},
-//     {title:"Canción de hielo y fuego", isRead:false},
-//     {title:"Devastación", isRead:true}
-// ]
+ const books: Book[] = [
+     {title:"Harry Potter y la piedra filosofal", isRead:true},
+     {title:"Canción de hielo y fuego", isRead:false},
+     {title:"Devastación", isRead:true}
+ ]
 
-// function isBookRead(books: Book[], titleToSearch: string): boolean{
-//     const [first] = books.filter(x => x.title === titleToSearch)
-//     return first ? first.isRead : false;
-// }
+ function isBookRead(books: Book[], titleToSearch: string): boolean{
+     const [first] = books.filter(x => x.title === titleToSearch)
+     return first ? first.isRead : false;
+ }
 
-// console.log(isBookRead(books, "Devastación"))
+ console.log(isBookRead(books, "Devastación"))
 
 // Ejercicio 9
 
