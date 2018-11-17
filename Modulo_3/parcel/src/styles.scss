@@ -1,0 +1,11 @@
+$colorback: #cecece;
+$color: #4e4e4e;
+
+.helloWorld{
+    background-color: $colorback;
+    color: $color;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+}
