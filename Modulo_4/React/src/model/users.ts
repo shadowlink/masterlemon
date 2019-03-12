@@ -5,6 +5,7 @@ export interface UserEntity {
   location: string;
   email: string;
   bio: string;
+  avatar_url: string;
 }
 
 export const createDefaultUserEntity = () => ({
@@ -13,5 +14,6 @@ export const createDefaultUserEntity = () => ({
   company: "",
   location: "",
   email: "",
-  bio: ""
+  bio: "",
+  avatar_url: ""
 });

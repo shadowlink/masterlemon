@@ -2,9 +2,9 @@ import * as React from "react";
 import { MemberEntity } from "../../model/member";
 import { memberAPI } from "../../api/memberAPI";
 import { MemberRow } from "./memberRow";
-import { MemberHead } from "./memberHead";
 import {} from "core-js";
 import TextField from "@material-ui/core/TextField";
+import Button from "@material-ui/core/Button";
 
 interface Props {}
 
@@ -46,17 +46,13 @@ export class MembersTableComponent extends React.Component<Props, State> {
           margin="normal"
         />
 
-        <button onClick={this.loadMembers}>Load</button>
-        <table className="table">
-          <thead>
-            <MemberHead />
-          </thead>
-          <tbody>
-            {this.state.members.map((member: MemberEntity) => (
-              <MemberRow key={member.id} member={member} />
-            ))}
-          </tbody>
-        </table>
+        <Button variant={"outlined"} onClick={this.loadMembers}>
+          Load
+        </Button>
+
+        {this.state.members.map((member: MemberEntity) => (
+          <MemberRow key={member.id} member={member} />
+        ))}
       </div>
     );
   }

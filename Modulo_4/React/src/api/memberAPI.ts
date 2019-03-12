@@ -52,11 +52,12 @@ class MemberAPI {
     var member: UserEntity = createDefaultUserEntity();
 
     member.bio = data.id;
-    member.company = data.login;
-    member.email = data.avatar_url;
-    member.location = data.avatar_url;
-    member.login = data.avatar_url;
-    member.name = data.avatar_url;
+    member.company = data.company;
+    member.email = data.email;
+    member.location = data.location;
+    member.login = data.login;
+    member.name = data.name;
+    member.avatar_url = data.avatar_url;
 
     return Promise.resolve(member);
   }
