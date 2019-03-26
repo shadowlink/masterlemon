@@ -1,14 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`pages/members/list/pageContainer tests should render as expected passing state 1`] = `
+exports[`members/list/pageContainer tests should render as expected passing state 1`] = `
 <PageContainer
   fetchMembers={[Function]}
   members={
     Array [
       Object {
-        "avatarUrl": "test avatar_url",
+        "avatarUrl": "",
         "id": 1,
-        "name": "test login",
+        "name": "",
       },
     ]
   }

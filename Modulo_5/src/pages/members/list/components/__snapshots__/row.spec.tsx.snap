@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`members/list/components/row tests should render row 1`] = `
+<tr>
+  <td>
+    <img
+      src="url"
+      style={
+        Object {
+          "maxWidth": "10rem",
+        }
+      }
+    />
+  </td>
+  <td>
+    <span>
+      0
+    </span>
+  </td>
+  <td>
+    <span>
+      felipe
+    </span>
+  </td>
+</tr>
+`;

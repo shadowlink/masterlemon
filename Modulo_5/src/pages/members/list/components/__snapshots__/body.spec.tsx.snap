@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`members/list/components/body tests should render body 1`] = `
+<tbody>
+  <Component
+    key="0"
+    member={
+      Object {
+        "avatarUrl": "url",
+        "id": 0,
+        "name": "felipe",
+      }
+    }
+  />
+</tbody>
+`;

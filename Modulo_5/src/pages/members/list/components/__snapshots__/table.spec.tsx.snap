@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`members/list/components/table tests should render table 1`] = `
+<table
+  className="table table-striped"
+>
+  <Component />
+  <Component
+    members={
+      Array [
+        Object {
+          "avatarUrl": "url",
+          "id": 0,
+          "name": "felipe",
+        },
+      ]
+    }
+  />
+</table>
+`;
