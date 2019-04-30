@@ -1,0 +1,4 @@
+node_modules
+*.exe
+terraform_0.11.13_windows_amd64.zip
+deployment.pem
