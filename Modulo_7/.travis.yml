@@ -1,0 +1,10 @@
+sudo: required
+services:
+  - docker
+script:
+  - ls
+  - docker build -t modulopracticascloud .
+after_success:
+  - docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
+  - docker tag modulopracticascloud $DOCKER_USER/modulopracticascloud
+  - docker push $DOCKER_USER/modulopracticascloud
